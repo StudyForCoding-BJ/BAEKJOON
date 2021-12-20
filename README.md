@@ -2,9 +2,11 @@
 [백준 단계별](https://www.acmicpc.net/step) 문제 풀이
 
 ---
+
 언어: Python
 
 매주 월요일 코드리뷰
+
 ---
 ### 카테고리 목록
 
