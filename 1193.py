@@ -7,7 +7,7 @@ def fraction(a: int):
         if a <= start:
             gap = start - a
             if depth%2 == 0:
-                print(depth)
+                #print(depth)
                 return (str(depth-gap)+"/"+str(1+gap))
             else:
                 return (str(1+gap)+"/"+str(depth-gap))
