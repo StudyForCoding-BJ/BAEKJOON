@@ -1,24 +1,11 @@
-#BOJ 5622
+#BOJ 1522_BETTER sol
 
-tstWord = input()
-num = len(tstWord)
-totalAlph = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+#Use list indexing
+alphList = ["ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"]
 res = 0
-for i in tstWord:
-    if 0 <= totalAlph.find(i) < 3 :
-        res = res + 2
-    elif 3 <= totalAlph.find(i) < 6:
-        res = res + 3
-    elif 6 <= totalAlph.find(i) < 9:
-        res = res + 4
-    elif 9 <= totalAlph.find(i) < 12:
-        res = res + 5
-    elif 12 <= totalAlph.find(i) < 15:
-        res = res + 6
-    elif 15 <= totalAlph.find(i) < 19:
-        res = res + 7
-    elif 19 <= totalAlph.find(i) < 22:
-        res = res + 8
-    else:
-        res = res + 9
-print (res+num)
+tstWord = input()
+for i in range(len(tstWord)):
+    for j in alphList:
+        if tstWord[i] in j:
+            res += alphList.index(j) + 3    #each index + 2 = dial num, +1 for time
+print (res)
