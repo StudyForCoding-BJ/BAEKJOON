@@ -8,12 +8,3 @@
 매주 월요일 코드리뷰
 
 ---
-### History
-
-[Sumin]
-
-21.12.29. Sol 8 problems (함수 3 + 문자열 5)
-
-22.01.01. Sol 5 problems (문자열 5)
-
----
