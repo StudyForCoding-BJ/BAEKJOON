@@ -1,5 +1,5 @@
 #BOJ 7568
-# k+= 1을 아예 밖으로 뺄 때와 if, else 처리를 할 때 -> if, else 처리 할 때가 4ms 더 나오는데 왜 그럴까
+# k+= 1을 아예 밖으로 뺄 때와 if, else 처리를 할 때 -> if, else 처리 할 때가 4ms 덜 나오는데 왜 그럴까
 import sys
 
 num = int(input())
