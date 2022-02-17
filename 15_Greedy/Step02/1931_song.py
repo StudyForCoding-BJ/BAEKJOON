@@ -1,31 +1,27 @@
-#시간초과
+# 312ms
+# 51636KB
 
 import sys
 N = int(sys.stdin.readline())
 
 arr = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
-arr.sort(key=lambda x:x[0])
-# print(arr)
+arr.sort(key=lambda x:x[0]) # 시작하는 시간
+arr.sort(key=lambda x:x[1]) # 끝나는 시간 
 
-room_arr = [-1]
-count = [0] * 1000001
 
-def room(meeting):
-    start = meeting[0]
-    end = meeting[1]
-    for i in range(len(room_arr)):
-        #방 없으면 방 만들기
-        if i == (len(room_arr)-1):
-            room_arr.append(end)
-            count[i+1] += 1
-            
-        if room_arr[i] <= start: #전 회의 끝나는 시간이 회의 시작시간보다 작을 경우
-            room_arr[i] = end
-            count[i] += 1
-        #아니면 다음 방 탐색
-            
-for i in arr:
-    room(i)
+count = []
+count.append(arr[0])
+for i in range(1, N):
+    pre_end = count[-1][1] # 마지막으로 선택된 회의 끝 시간
+    start = arr[i][0] # 회의 시작 시간
+    if start >= pre_end:
+        count.append(arr[i])
 
-# print(room_arr)
-print(max(count))
+print(len(count))
+
+'''
+시작하는 시간 순으로 정렬하는 이유? 
+-> [3, 3], [2, 3], [3, 3]의 경우 이렇게 끝나는 시간이 정렬되면
+[2, 3] 회의는 할 수 없다고 판단, 최대 2개가 답이됨
+but 실제로는 [2, 3], [3, 3], [3, 3] 순이면 3개의 회의를 모두 할 수 있음
+'''
