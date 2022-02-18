@@ -1,5 +1,5 @@
-#124ms
-#30864KB
+# 124ms
+# 30864KB
 
 N = int(input())
 P = list(map(int, input().split()))

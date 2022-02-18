@@ -8,7 +8,7 @@ result = 0
 for i in oper[0].split('+'):
     result += int(i)
 
-# 그 뒤로는 + 계산해서 s에서 빼주면 됨
+# 그 뒤로는 + 계산해서 s에서 뺌
 for i in oper[1:]:
     for j in i.split('+'):
         result -= int(j)
