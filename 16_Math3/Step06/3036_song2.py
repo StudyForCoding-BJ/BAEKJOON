@@ -5,8 +5,7 @@ N = int(input())
 R = list(map(int, input().split()))
 
 def find_gcd(a, b):
-    if b > a:
-        a, b = b, a
+    # a < b 일때 어차피 a, b 순서 바뀌어서 따로 처리 필요 X
     while b != 0:
         a, b = b, a%b
     return a
