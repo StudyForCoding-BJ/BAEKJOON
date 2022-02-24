@@ -12,3 +12,4 @@ while i >= 0 and k != 0:
         cnt += num
         k -= coins[i]*num
     i -= 1
+print(cnt)
