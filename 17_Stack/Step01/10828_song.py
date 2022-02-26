@@ -38,35 +38,9 @@ for i in range(N):
         else:
             print(-1)
     
-    
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 for i in range(N):
     user_input = sys.stdin.readline().split()
     if user_input[0] == 'push':
         value = int(user_input[1])
         
     print(user_input)
-    
-
-# def select_oper() -> Oper:
-#     n = input()
-#     return 
