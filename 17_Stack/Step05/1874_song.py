@@ -14,7 +14,7 @@ count = 0
 for i in arr:
     for j in range(count+1, N+2):
         
-        if i >= j: # 원하는 수가 나오면 일단 push
+        if i >= j: # 원하는 수가 나올 때까지 push
             stack.append(j)
             result.append('+')
             
@@ -25,7 +25,7 @@ for i in arr:
             result.append('-')
             break
         
-        else:
+        else: # 스택수열 만들 수 없는 경우
             print('NO')
             exit(0)
         
