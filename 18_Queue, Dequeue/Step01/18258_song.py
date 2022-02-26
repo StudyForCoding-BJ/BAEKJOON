@@ -18,7 +18,6 @@ for i in range(N):
     
     if com == 'push':
         value = user_input[1]
-        
         queue[rear] = value
         rear += 1
         queue_size += 1
