@@ -1,3 +1,8 @@
+# BOJ 17298
+# 1072ms
+# 197240KB
+# 시간은 단축되지만 메모리를 더 씀
+
 n = int(input())
 answer = [-1] * n
 numbers=list(map(int,input().split()))
