@@ -22,3 +22,7 @@ for i in range(1, len(numbers)):
     
 print(result)
 
+'''
+findall은 find 함수와 동일하게 대충 O(n)정도인거같음
+애초에 파이썬의 문자열 검색 라이브러리가 시간복잡도가 높다고 함
+'''
