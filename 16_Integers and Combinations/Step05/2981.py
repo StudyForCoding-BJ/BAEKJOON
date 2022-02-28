@@ -3,12 +3,9 @@ import sys
 from math import gcd
 n = int(input())
 num = []
-mag = 1000000000
 
 for i in range(n):
     tmp = int(sys.stdin.readline().strip())
-    if tmp < mag:
-        mag = tmp
     num.append(tmp)
 
 #minus, gcd
