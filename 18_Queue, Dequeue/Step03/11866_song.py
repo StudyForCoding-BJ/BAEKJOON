@@ -3,11 +3,10 @@
 # 32344KB
 
 import sys
-from collections import deque
 input = sys.stdin.readline
 
 N, K = map(int, input().split())
-queue = deque([i for i in range(1, N+1)])
+queue = [i for i in range(1, N+1)]
 result = []
 idx = 0
 
@@ -25,5 +24,7 @@ result.append(queue[0])
 
 string = ', '.join(map(str, result))
 print(f'<{string}>')
+
+#덱 대신에 리스트만 썼더나 속도 98ms에서 68ms로 줄어듬
     
  
