@@ -29,5 +29,3 @@ def dq(layer: int):
         return dot(dot(paramtx, paramtx), mtx)
 
 print(dq(n)[0][1]%mod)
-
-![theory](https://user-images.githubusercontent.com/69625013/158332315-77811d13-36a7-4ce4-8dda-0024e06ccf57.jpg)
